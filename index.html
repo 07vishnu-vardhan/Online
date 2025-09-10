@@ -18,7 +18,14 @@
 
       <label for="phone">Phone (required):</label><br />
       <!-- tel type gives mobile-friendly keypad on phones -->
-      <input type="tel" id="phone" name="Phone" pattern="[0-9+\-\s()]{6,20}" required placeholder="+91 98765 43210"><br /><br />
+     <label for="phone">Phone (10 digits required):</label><br />
+<input type="tel" id="phone" name="Phone" 
+       pattern="[0-9]{10}" 
+       maxlength="10" 
+       required 
+       placeholder="phone number">
+<br /><br />
+
 
       <label for="address">Delivery Address:</label><br />
       <textarea id="address" name="Address" rows="3" cols="40" required placeholder="Street, City, Pincode"></textarea>
